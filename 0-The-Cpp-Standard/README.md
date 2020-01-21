@@ -66,7 +66,7 @@ int main() {
 
 The above code demonstrates undefined behavior because `foo()` returns a pointer pointing to a local variable. 
 
-However, if you compile it with a mainstream compiler (like MSVC), you will likely get the output `42`. This is the "behaves as you expected" scenario. Even so, you should never rely on undefined behavior (see the next section for more details).
+However, if you compile it with a mainstream compiler (like MSVC), you will likely get the output `42`. This is the "behaves as you expected" scenario. Even so, you should never rely on undefined behavior, because you never know when it is going to break!
 
 ## Compiler Specific Extensions
 
