@@ -48,7 +48,7 @@ Well, a typical compiler doesn't do the things mentioned above (because the writ
 * Spitts out undetermined values.
 * Behaves as you expected.
 
-Yes, it is allowed to behave as you expected. ...And this is actually, in most cases, the worst case, since you won't even be notice that you have triggered undefined behavior!
+Yes, it is allowed to behave as you expected. ...And this is actually, in most cases, the worst case, since you won't even notice that you have triggered undefined behavior!
 
 ```c++
 #include <iostream>
