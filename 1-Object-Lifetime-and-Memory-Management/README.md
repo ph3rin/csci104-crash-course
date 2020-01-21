@@ -57,7 +57,7 @@ int main() {
 }
 ```
 
-(1) Creates a temporary object of type `int`. [^1]
+(1) Creates a temporary object of type `int`. [[1]](1)
 
 Question: does the following code create a temporary object? (Tricky question, do some research; hint: it depends on the standard revision)
 
@@ -71,5 +71,5 @@ int main() {
 }
 ```
 
-[^1] We assume that integral literals (`42`) is not implemented as a temporary.
+##### [1] We assume that integral literals (like `42`) are not implemented as temporaries.
 
