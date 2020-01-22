@@ -71,6 +71,25 @@ int main() {
 }
 ```
 
+## Object Lifetime
+
+Every object created has a lifetime, in which it is fully open to manipulation.
+
+An object's lifetime begins after its constructor returns and ends when its destructor is called.
+
+### Objects with Automatic Storage Duration
+
+Objects defined in block scope have automatic storage duration. Their constructor is called (i.e. lifetime starts) at the point of definition, and destructor called (i.e. lifetime ends) when the control reaches their inner-most closing brace, or a statement is used to jump out of it. (e.g. `break`, `continue`, `goto`, `return`, etc.)
+
+```c++
+void foo() {
+    std::string str;    // birth of object 'str'
+    {
+        int a = 0;      // birth of object 'a'
+    }                   // funeral of object 'a'
+}                       // funeral of object 'str'
+```
+
 ## Notes
 
 [1] We assume that integral literals (like `42`) are not implemented as temporaries.
